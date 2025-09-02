@@ -51,7 +51,10 @@ resource "aws_subnet" "private" {
 # NAT Gateway (one per AZ)
 resource "aws_eip" "nat" {
   count = length(var.azs)
-  vpc   = true
+  # vpc   = true   <-- REMOVE this line
+  tags = {
+    Name = "${var.project}-nat-${count.index}"
+  }
 }
 
 resource "aws_nat_gateway" "nat" {
