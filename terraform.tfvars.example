@@ -1,0 +1,7 @@
+project          = "myapp"
+region           = "us-east-1"
+ec2_ami          = "ami-xxxxxxxx"
+key_name         = "my-keypair"
+db_username      = "admin"
+db_password      = "SuperSecretPass"
+allowed_ssh_cidr = "YOUR_IP/32"
