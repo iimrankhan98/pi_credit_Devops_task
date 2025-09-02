@@ -4,4 +4,4 @@ ec2_ami          = "ami-080e1f13689e07408"   # Ubuntu 22.04 LTS in us-east-1
 key_name         = "my-keypair"
 db_username      = "admin"
 db_password      = "SuperSecretPass"
-allowed_ssh_cidr = "0.0.0.0/0"
+allowed_ssh_cidr = "65.0.110.86/32"
